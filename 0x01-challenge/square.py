@@ -7,9 +7,8 @@ class Square():
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
-	"""Initilaization of Square class"""
+        """Initilaization of Square class"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -18,12 +17,13 @@ class Square():
         return self.width * self.width
 
     def permiter_of_my_square(self):
-	"""permiter_of_my_square"""
+        """permiter_of_my_square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-	"""return object repr"""
+        """return object repr"""
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     """create a square object representation"""
